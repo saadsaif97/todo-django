@@ -1,0 +1,7 @@
+{% extends 'todo/layout.html' %} {% block body %}
+<h1>Hi from todo</h1>
+{% for task in tasks %}
+<p>{{task}}</p>
+{% empty %}
+<p>No task</p>
+{% endfor %} {% endblock %}
